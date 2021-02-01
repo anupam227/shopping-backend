@@ -35,7 +35,7 @@ app.use("/api",orderRoutes);
 app.use("/api",paymentBRoutes);
 
 
-const port = 8000;
+const port =process.env.PORT || 8000;
 app.listen(port, ()=>{
     console.log(`App is runing at ${port}`)
 });
